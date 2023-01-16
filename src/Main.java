@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -36,5 +37,29 @@ public class Main {
         } else {
             System.out.println("Если скорость " + speed + " , то можно ездить спокойно");
         }
+    }
+    public static void task4() {
+        System.out.println("Задача 4");
+        int age = 1;
+        boolean lowAge = age >= 2 && age <= 6;
+        boolean middleAge = age >= 7 && age < 18;
+        boolean universityAge = age >= 18 && age < 24;
+        boolean workAge = age >= 24;
+
+        if (lowAge) {
+            System.out.println("Если возраст человека равен " + age + " , то ему нужно ходить в детский сад");
+        }
+        if (middleAge) {
+            System.out.println("Если возраст человека равен " + age + " , то ему нужно ходить в в школу");
+        }
+        if (universityAge) {
+            System.out.println("Если возраст человека равен " + age + " , то его место в университете");
+        }
+        if (workAge) {
+            System.out.println("Если возраст человека равен " + age + " , то ему пора ходить на работу");
+        }
+        if (lowAge || middleAge || universityAge || workAge) {}
+        else {
+            System.out.println("Если возраст человека равен " + age + " , то он вне рамок задачи");}
     }
 }

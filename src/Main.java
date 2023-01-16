@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -77,6 +78,30 @@ public class Main {
         if (noFunny || funnyFithParents) {}
         else {
             System.out.println("Если возраст ребенка равен " + age + " , то он может кататься без сопровождения взрослого");
+        }
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        int passenger = 60;
+        byte mVagon = 102;
+        byte mSit = 60;
+        boolean sitIStoya = passenger < mVagon && passenger < mSit;
+        boolean onlyStoya = passenger < mVagon && passenger >= mSit;
+        boolean full = passenger == mVagon;
+
+        if (sitIStoya) {
+            System.out.println("Если в вагоне поезда " + passenger + " человек, то есть и сидячее и стоячее место");
+        }
+        if (onlyStoya) {
+            System.out.println("Если в вагоне поезда " + passenger + " человек, то есть только стоячее место");
+        }
+        if (full) {
+            System.out.println("Если в вагоне поезда " + passenger + " человек, то вагон уже полностью забит");
+        }
+        if (sitIStoya || onlyStoya || full) {}
+        else {
+            System.out.println("Если в вагоне поезда " + passenger + " человек, то вместимость вагона превышена");
         }
     }
 }

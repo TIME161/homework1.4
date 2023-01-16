@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -104,4 +105,20 @@ public class Main {
             System.out.println("Если в вагоне поезда " + passenger + " человек, то вместимость вагона превышена");
         }
     }
-}
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 25;
+        int two = 30;
+        int three = 45;
+
+        boolean bigOne = one > two && one > three;
+        boolean bigTwo = two > one && two > three;
+        boolean bigThree = three > one && three > two;
+
+        if (bigOne) {System.out.println("Число " + one + " большее");}
+        if (bigTwo) {System.out.println("Число " + two + " большее");}
+        if (bigOne || bigTwo) {}
+        else {System.out.println("Число " + three + " большее");}
+        }
+    }

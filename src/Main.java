@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -40,7 +41,7 @@ public class Main {
     }
     public static void task4() {
         System.out.println("Задача 4");
-        int age = 1;
+        int age = 55;
         boolean lowAge = age >= 2 && age <= 6;
         boolean middleAge = age >= 7 && age < 18;
         boolean universityAge = age >= 18 && age < 24;
@@ -61,5 +62,21 @@ public class Main {
         if (lowAge || middleAge || universityAge || workAge) {}
         else {
             System.out.println("Если возраст человека равен " + age + " , то он вне рамок задачи");}
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        int age = 13;
+        boolean noFunny = age < 5;
+        boolean funnyFithParents = age >= 5 && age < 14;
+        if (noFunny) {
+            System.out.println("Если возраст ребенка равен " + age + " , то он не может кататься на аттракционе");
+        }
+        if (funnyFithParents) {
+            System.out.println("Если возраст ребенка равен " + age + " , то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
+        }
+        if (noFunny || funnyFithParents) {}
+        else {
+            System.out.println("Если возраст ребенка равен " + age + " , то он может кататься без сопровождения взрослого");
+        }
     }
 }
